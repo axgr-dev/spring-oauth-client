@@ -1,0 +1,18 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: google-client-id
+            clientSecret: google-client-secret
+            scope: openid,profile,email,https://www.googleapis.com/auth/youtube
+  config:
+    import: optional:secrets.yml
+
+youtube:
+  url: https://youtube.googleapis.com/youtube/v3
+  video: uGxao2hprEg
+  title: "This Video Has %d Views?!"
+  cron: "0 0/10 * * * *"
+  principal: google-principal
