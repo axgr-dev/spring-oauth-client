@@ -4,4 +4,4 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
-rootProject.name = "spring-youtube-api"
+rootProject.name = "spring-oauth-client"
